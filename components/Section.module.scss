@@ -1,0 +1,8 @@
+@use "../sass/abstracts/variables";
+@use "../sass/abstracts/mixins";
+
+.section {
+  padding: 2rem 0;
+  @include mixins.backgroundColors();
+  @include mixins.marginAndPadding();
+}

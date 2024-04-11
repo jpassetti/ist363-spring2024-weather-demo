@@ -1,4 +1,16 @@
+@use "../sass/abstracts/variables";
+
 .header {
-  background-color: yellow;
+  //background-color: yellow;
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid lightgray;
+  h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: variables.$font__roboto_condensed;
+    text-transform: uppercase;
+  }
 }

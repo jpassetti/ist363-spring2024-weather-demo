@@ -1,0 +1,28 @@
+@use "../sass/abstracts/mixins";
+@use "../sass/abstracts/variables";
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  &.border-bottom-1 {
+    border-bottom: 1px solid lightgray;
+  }
+  @include mixins.marginAndPadding();
+  @include mixins.alignItems();
+  @include mixins.justifyContent();
+  @include mixins.flexDirection();
+}
+.table-header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid variables.$color__blue;
+  @include mixins.breakpoint(xs) {
+    display: none;
+  }
+}
+.table-row {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dotted variables.$color__blue;
+  margin-bottom: 0;
+}
